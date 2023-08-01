@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StrudlaFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.45"
+        android:contentDescription="@string/bgpicture"
+        android:src="@drawable/strudlanalogobg" />
+
+    <TextView
+        android:id="@+id/fr_strudla_naslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/dodaj_prodaj"
+        android:textColor="@color/textBoja"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fr_studla_buttonNapravi"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#FFDAB9"
+        android:text="@string/fr_button_napraviStrudle"
+        android:textColor="#333333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fr_strudla_naslov"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/fr_studla_buttonProdajMusterija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/kajsija"
+        android:text="@string/fr_button_prodajMusterija"
+        android:textColor="@color/textBoja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fr_studla_buttonProdajPijaca"
+        app:layout_constraintTop_toBottomOf="@+id/fr_studla_buttonNapravi" />
+
+    <Button
+        android:id="@+id/fr_studla_buttonProdajPijaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/kajsija"
+        android:text="@string/fr_button_prodajPijaca"
+        android:textColor="@color/textBoja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fr_studla_buttonNapravi" />
+
+    <TextView
+        android:id="@+id/fr_strudla_naslovIzvestaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/izvestaj"
+        android:textColor="@color/textBoja"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fr_studla_buttonProdajMusterija" />
+
+    <Button
+        android:id="@+id/fr_studla_buttonNapraviIzvestaj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/kajsija"
+        android:text="@string/napraviIzvestaj"
+        android:textColor="@color/textBoja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fr_strudla_naslovIzvestaj"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/fr_studla_buttonNovoStanje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/kajsija"
+        android:text="@string/novoStanje"
+        android:textColor="@color/textBoja"
+        app:layout_constraintStart_toEndOf="@+id/fr_studla_buttonNapravi"
+        app:layout_constraintTop_toBottomOf="@+id/fr_strudla_naslov" />
+
+    <TextView
+        android:id="@+id/fr_strudla_sirovineNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/sirovineNaslov"
+        android:textColor="@color/textBoja"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fr_studla_buttonNapraviIzvestaj" />
+
+    <Button
+        android:id="@+id/fr_strudla_dodajSirovine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/kajsija"
+        android:text="@string/dodaj_sirovine"
+        android:textColor="@color/textBoja"
+        app:layout_constraintStart_toStartOf="@+id/fr_studla_buttonNapraviIzvestaj"
+        app:layout_constraintTop_toBottomOf="@+id/fr_strudla_sirovineNaslov" />
+
+    <Button
+        android:id="@+id/fr_strudla_novoStanjeSirovine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/kajsija"
+        android:text="@string/novo_stanje_sirovina"
+        android:textColor="@color/textBoja"
+        app:layout_constraintEnd_toEndOf="@+id/fr_studla_buttonNapraviIzvestaj"
+        app:layout_constraintTop_toBottomOf="@+id/fr_strudla_sirovineNaslov" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

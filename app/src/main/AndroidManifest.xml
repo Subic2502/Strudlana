@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Strudlana"
+        tools:targetApi="31">
+        <activity
+            android:name=".NapraviIzvestajActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProdajaPijacaMusterijaProveraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProdajPijacaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NapraviStrudleProveraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DodajSirovineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DodajTrosakActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NapraviStrudleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManifestacijaPrikaz"
+            android:exported="false" />
+        <activity
+            android:name=".ProveraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NovaManifestacijaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

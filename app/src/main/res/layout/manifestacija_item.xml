@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/mItem_makVrednostProdato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/mItem_prodatoNaslov"
+        app:layout_constraintStart_toStartOf="@+id/mItem_prodatoNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_prodatoNaslov" />
+
+    <TextView
+        android:id="@+id/mItem_makVrednostOstalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/mItem_ostaloNaslov"
+        app:layout_constraintStart_toStartOf="@+id/mItem_ostaloNaslov"
+        app:layout_constraintTop_toTopOf="@+id/mItem_makNaslov" />
+
+    <TextView
+        android:id="@+id/mItem_orasiVrednostOstalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/mItem_makVrednostOstalo"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_makVrednostOstalo" />
+
+    <TextView
+        android:id="@+id/mItem_orasiVrednostProdato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/mItem_makVrednostProdato"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_makVrednostProdato" />
+
+    <TextView
+        android:id="@+id/mItem_visnjaVrednostOstalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/mItem_orasiVrednostOstalo"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_orasiVrednostOstalo" />
+
+    <TextView
+        android:id="@+id/mItem_visnjaVrednostProdato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/mItem_orasiVrednostProdato"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_orasiVrednostProdato" />
+
+    <TextView
+        android:id="@+id/mItem_cokoVisnjaVrednostOstalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/mItem_visnjaVrednostOstalo"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_visnjaVrednostOstalo" />
+
+    <TextView
+        android:id="@+id/mItem_cokoVisnjaVrednostProdato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/mItem_visnjaVrednostProdato"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_visnjaVrednostProdato" />
+
+    <TextView
+        android:id="@+id/mItem_jabukaVrednostOstalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/mItem_cokoVisnjaVrednostOstalo"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_cokoVisnjaVrednostOstalo" />
+
+    <TextView
+        android:id="@+id/mItem_prodatoNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="@string/prodatoNaslov"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/mItem_ostaloNaslov"
+        app:layout_constraintTop_toTopOf="@+id/mItem_ostaloNaslov" />
+
+    <TextView
+        android:id="@+id/mItem_datumKrajaVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/mItem_datumKraja"
+        app:layout_constraintTop_toTopOf="@+id/mItem_datumKraja" />
+
+    <TextView
+        android:id="@+id/miItem_redniBroj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mitem_naziv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/miItem_redniBroj"
+        app:layout_constraintTop_toTopOf="@+id/miItem_redniBroj" />
+
+    <TextView
+        android:id="@+id/mItem_lokacija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/mitem_naziv"
+        app:layout_constraintTop_toTopOf="@+id/mitem_naziv" />
+
+    <TextView
+        android:id="@+id/mItem_datumPocetka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/datum_pocetka_mItem"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/miItem_redniBroj"
+        app:layout_constraintTop_toBottomOf="@+id/miItem_redniBroj" />
+
+    <TextView
+        android:id="@+id/mItem_datumKraja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/datum_kraja_mItem"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/mItem_datumPocetka"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_datumPocetka" />
+
+    <TextView
+        android:id="@+id/mItem_datumPocetkaVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/mItem_datumPocetka"
+        app:layout_constraintTop_toTopOf="@+id/mItem_datumPocetka" />
+
+    <TextView
+        android:id="@+id/mItem_ostaloNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/ostalo_mItem"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/mItem_datumKraja"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_datumKraja" />
+
+    <TextView
+        android:id="@+id/mItem_makNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/mak_mItem"
+        app:layout_constraintStart_toStartOf="@+id/mItem_datumKraja"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_ostaloNaslov" />
+
+    <TextView
+        android:id="@+id/mItem_OrasiNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/orasi_mItem"
+        app:layout_constraintStart_toStartOf="@+id/mItem_makNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_makNaslov" />
+
+    <TextView
+        android:id="@+id/mItem_visnjaNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/visnja_mItem"
+        app:layout_constraintStart_toStartOf="@+id/mItem_OrasiNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_OrasiNaslov" />
+
+    <TextView
+        android:id="@+id/mItem_cokoVisnjaNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/coko_visnja_mItem"
+        app:layout_constraintStart_toStartOf="@+id/mItem_visnjaNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_visnjaNaslov" />
+
+    <TextView
+        android:id="@+id/mItem_jabukaNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/jabuka_mItem"
+        app:layout_constraintStart_toStartOf="@+id/mItem_cokoVisnjaNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_cokoVisnjaNaslov" />
+
+    <TextView
+        android:id="@+id/mItem_rogacNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/rogac_mItem"
+        app:layout_constraintStart_toStartOf="@+id/mItem_jabukaNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_jabukaNaslov" />
+
+    <TextView
+        android:id="@+id/mItem_jabukaVrednostProdato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/mItem_cokoVisnjaVrednostProdato"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_cokoVisnjaVrednostProdato" />
+
+    <TextView
+        android:id="@+id/mItem_rogacVrednostOstalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/mItem_jabukaVrednostOstalo"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_jabukaVrednostOstalo" />
+
+    <TextView
+        android:id="@+id/mItem_rogacVrednostProdato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/mItem_jabukaVrednostProdato"
+        app:layout_constraintTop_toBottomOf="@+id/mItem_jabukaVrednostProdato" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

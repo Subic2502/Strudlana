@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DodajTrosakActivity">
+
+    <TextView
+        android:id="@+id/dodajTrosak_cetvrtiItemUkupnaVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/numberPickerCetvrti"
+        app:layout_constraintTop_toBottomOf="@+id/dodajTrosak_cetvrtiItemMernaJedinica" />
+
+    <TextView
+        android:id="@+id/dodajTrosak_cetvrtiItemCena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/numberPickerCetvrti"
+        app:layout_constraintTop_toTopOf="@+id/numberPickerCetvrti" />
+
+    <TextView
+        android:id="@+id/dodajTrosak_cetvrtiItemMernaJedinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/numberPickerCetvrti"
+        app:layout_constraintTop_toBottomOf="@+id/dodajTrosak_cetvrtiItemCena" />
+
+    <TextView
+        android:id="@+id/dodajTrosak_treciItemUkupnaVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/noveStrudle_numberPickerMak"
+        app:layout_constraintTop_toBottomOf="@+id/dodajTrosak_treciItemMernaJedinica" />
+
+    <TextView
+        android:id="@+id/dodajTrosak_treciItemCena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/noveStrudle_numberPickerMak"
+        app:layout_constraintTop_toTopOf="@+id/noveStrudle_numberPickerMak" />
+
+    <TextView
+        android:id="@+id/dodajTrosak_treciItemMernaJedinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/noveStrudle_numberPickerMak"
+        app:layout_constraintTop_toBottomOf="@+id/dodajTrosak_treciItemCena" />
+
+    <TextView
+        android:id="@+id/dodajTrosak_drugiItemUkupnaVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/numberPickerDrugi"
+        app:layout_constraintTop_toBottomOf="@+id/dodajTrosak_drugiItemMernaJedinica" />
+
+    <TextView
+        android:id="@+id/dodajTrosak_drugiItemCena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/numberPickerDrugi"
+        app:layout_constraintTop_toTopOf="@+id/numberPickerDrugi" />
+
+    <TextView
+        android:id="@+id/dodajTrosak_drugiItemMernaJedinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintStart_toEndOf="@+id/numberPickerDrugi"
+        app:layout_constraintTop_toBottomOf="@+id/dodajTrosak_drugiItemCena" />
+
+    <NumberPicker
+        android:id="@+id/numberPickerDrugi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@+id/dodajTrosak_drugiItemNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/dodajTrosak_drugiItemNaslov" />
+
+    <TextView
+        android:id="@+id/dodajTrosak_drugiItemNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        app:layout_constraintStart_toEndOf="@+id/dodajTrosak_prviItemCena"
+        app:layout_constraintTop_toTopOf="@+id/dodajTrosak_prviItemNaslov" />
+
+    <NumberPicker
+        android:id="@+id/numberPickerCetvrti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@+id/dodajTrosak_cetvrtiItemNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/dodajTrosak_cetvrtiItemNaslov" />
+
+    <TextView
+        android:id="@+id/dodajTrosak_cetvrtiItemNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        app:layout_constraintStart_toEndOf="@+id/dodajTrosak_treciItemCena"
+        app:layout_constraintTop_toTopOf="@+id/dodajTrosak_treciItemNaslov" />
+
+    <NumberPicker
+        android:id="@+id/numberPickerPrvi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@+id/dodajTrosak_prviItemNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/dodajTrosak_prviItemNaslov" />
+
+    <TextView
+        android:id="@+id/dodajTrosak_prviItemNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dodajTrosak_naslov" />
+
+    <TextView
+        android:id="@+id/dodajTrosak_naslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="💸Dodaj trošak💸"
+        android:textColor="@color/textBoja"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <NumberPicker
+        android:id="@+id/noveStrudle_numberPickerMak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@+id/dodajTrosak_treciItemNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/dodajTrosak_treciItemNaslov" />
+
+    <TextView
+        android:id="@+id/dodajTrosak_treciItemNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="@+id/dodajTrosak_prviItemNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/numberPickerPrvi" />
+
+    <TextView
+        android:id="@+id/dodajTrosak_prviItemUkupnaVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/numberPickerPrvi"
+        app:layout_constraintTop_toBottomOf="@+id/dodajTrosak_prviItemMernaJedinica" />
+
+    <TextView
+        android:id="@+id/dodajTrosak_prviItemCena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/numberPickerPrvi"
+        app:layout_constraintTop_toTopOf="@+id/numberPickerPrvi" />
+
+    <TextView
+        android:id="@+id/dodajTrosak_prviItemMernaJedinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/numberPickerPrvi"
+        app:layout_constraintTop_toBottomOf="@+id/dodajTrosak_prviItemCena" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="@color/kajsijaTamna"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numberPickerCetvrti"
+        app:layout_constraintTop_toBottomOf="@+id/numberPickerCetvrti"
+        app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

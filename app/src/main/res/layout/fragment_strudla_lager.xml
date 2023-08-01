@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StrudlaLager" >
+
+    <TextView
+        android:id="@+id/fr_strudla_podnaslovInfoStrudle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/strudle"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fr_strudla_cokoVisnjaVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/zakljucano"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/fr_strudla_cokovisnjaNaslov2"
+        app:layout_constraintTop_toTopOf="@+id/fr_strudla_cokovisnjaNaslov2" />
+
+    <TextView
+        android:id="@+id/fr_strudla_makNaslov2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/makNaslov"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fr_strudla_podnaslovInfoStrudle2" />
+
+    <TextView
+        android:id="@+id/fr_strudla_makVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/zakljucano"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/fr_strudla_makNaslov2"
+        app:layout_constraintTop_toTopOf="@+id/fr_strudla_makNaslov2" />
+
+    <TextView
+        android:id="@+id/fr_strudla_orasiNaslov2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/orasiNaslov"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/fr_strudla_makNaslov2"
+        app:layout_constraintTop_toBottomOf="@+id/fr_strudla_makNaslov2" />
+
+    <TextView
+        android:id="@+id/fr_strudla_orasiVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/zakljucano"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/fr_strudla_orasiNaslov2"
+        app:layout_constraintTop_toTopOf="@+id/fr_strudla_orasiNaslov2" />
+
+    <TextView
+        android:id="@+id/fr_strudla_visnjaNaslov2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/visnjaNaslov"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/fr_strudla_orasiNaslov2"
+        app:layout_constraintTop_toBottomOf="@+id/fr_strudla_orasiNaslov2" />
+
+    <TextView
+        android:id="@+id/fr_strudla_visnjaVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/zakljucano"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/fr_strudla_visnjaNaslov2"
+        app:layout_constraintTop_toTopOf="@+id/fr_strudla_visnjaNaslov2" />
+
+    <TextView
+        android:id="@+id/fr_strudla_cokovisnjaNaslov2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/cokoVisnjaNslov"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/fr_strudla_visnjaNaslov2"
+        app:layout_constraintTop_toBottomOf="@+id/fr_strudla_visnjaNaslov2" />
+
+    <TextView
+        android:id="@+id/fr_strudla_jabukaNaslov2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/jabukaNaslov"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/fr_strudla_cokovisnjaNaslov2"
+        app:layout_constraintTop_toBottomOf="@+id/fr_strudla_cokovisnjaNaslov2" />
+
+    <TextView
+        android:id="@+id/fr_strudla_jabukaVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/zakljucano"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/fr_strudla_jabukaNaslov2"
+        app:layout_constraintTop_toTopOf="@+id/fr_strudla_jabukaNaslov2" />
+
+    <TextView
+        android:id="@+id/fr_strudla_rogacNaslov2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/rogacNaslov"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/fr_strudla_jabukaNaslov2"
+        app:layout_constraintTop_toBottomOf="@+id/fr_strudla_jabukaNaslov2" />
+
+    <TextView
+        android:id="@+id/fr_strudla_rogacVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/makVrednost"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/fr_strudla_rogacNaslov2"
+        app:layout_constraintTop_toTopOf="@+id/fr_strudla_rogacNaslov2" />
+
+    <TextView
+        android:id="@+id/strudlePoMan_Naslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/strudle_po_manifestacijama"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fr_strudla_rogacNaslov2" />
+
+    <TextView
+        android:id="@+id/strudlePoMan_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/studlePoManTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/strudlePoMan_Naslov" />
+</androidx.constraintlayout.widget.ConstraintLayout>

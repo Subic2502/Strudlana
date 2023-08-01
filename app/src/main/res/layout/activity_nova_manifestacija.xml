@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NovaManifestacijaActivity">
+
+    <ImageView
+        android:id="@+id/novaMan_pozadina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:alpha="0.45"
+        android:background="@null"
+        android:contentDescription="@string/bgpicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_novamanifestacija_naziv"
+        tools:ignore="VisualLintBounds,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/novaMan_naslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="@string/nova_manifestacija"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/novaMan_naslovParametra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/textBoja"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novaMan_naslov" />
+
+    <EditText
+        android:id="@+id/novaMan_editTextParametra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novaMan_naslovParametra"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck,VisualLintOverlap" />
+
+    <Button
+        android:id="@+id/novaMan_izaberiDatumPocetka2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/kajsija"
+        android:text="@string/novaMan_izaberiDatum"
+        android:textColor="@color/textBoja"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novaMan_editTextParametra" />
+
+    <TextView
+        android:id="@+id/novaMan_textViewDatum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/textBoja"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novaMan_naslovParametra"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck,TextViewEdits" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/novaMan_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:contentDescription="@string/ididalje"
+        app:backgroundTint="@color/kajsijaTamna2"
+        app:layout_constraintStart_toEndOf="@+id/novaMan_izaberiDatumPocetka2"
+        app:layout_constraintTop_toBottomOf="@+id/novaMan_izaberiDatumPocetka2"
+        app:srcCompat="@drawable/baseline_arrow_forward_24"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/novaMan_pomoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/novaMan_pomocString"
+        android:textAlignment="center"
+        android:textColor="@color/textBoja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novaMan_editTextParametra" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManifestacijaPrikaz">
+
+    <TextView
+        android:id="@+id/manPrikaz_naslov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/naslovManPrikaz"
+        android:textAlignment="center"
+        android:textColor="@color/textBoja"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/manPrikaz_stanjeProdatoNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/stanje_prodatoManPrikaz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manPrikaz_naslov" />
+
+    <TextView
+        android:id="@+id/manPrikaz_makStanjeProdatoNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/makManPrikaz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manPrikaz_stanjeProdatoNaslov" />
+
+    <TextView
+        android:id="@+id/manPrikaz_orasiStanjeProdatoNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/orasiManPrikaz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manPrikaz_makStanjeProdatoNaslov" />
+
+    <TextView
+        android:id="@+id/manPrikaz_visnjaStanjeProdatoNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/vi_njaManPrikaz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manPrikaz_orasiStanjeProdatoNaslov" />
+
+    <TextView
+        android:id="@+id/manPrikaz_cokoVisnjaStanjeProdatoNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/cvManPrikaz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manPrikaz_visnjaStanjeProdatoNaslov" />
+
+    <TextView
+        android:id="@+id/manPrikaz_jabukaStanjeProdatoNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/jabukaManPrikaz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manPrikaz_cokoVisnjaStanjeProdatoNaslov" />
+
+    <TextView
+        android:id="@+id/manPrikaz_rogacStanjeProdatoNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/rogacManPrikaz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manPrikaz_jabukaStanjeProdatoNaslov" />
+
+    <TextView
+        android:id="@+id/manPrikaz_makVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/manPrikaz_stanjeProdatoNaslov"
+        app:layout_constraintTop_toTopOf="@+id/manPrikaz_makStanjeProdatoNaslov" />
+
+    <TextView
+        android:id="@+id/manPrikaz_orasiVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/manPrikaz_makVrednost"
+        app:layout_constraintTop_toTopOf="@+id/manPrikaz_orasiStanjeProdatoNaslov" />
+
+    <TextView
+        android:id="@+id/manPrikaz_visnjaVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/manPrikaz_orasiVrednost"
+        app:layout_constraintTop_toTopOf="@+id/manPrikaz_visnjaStanjeProdatoNaslov" />
+
+    <TextView
+        android:id="@+id/manPrikaz_cokoVisnjaVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/manPrikaz_visnjaVrednost"
+        app:layout_constraintTop_toTopOf="@+id/manPrikaz_cokoVisnjaStanjeProdatoNaslov" />
+
+    <TextView
+        android:id="@+id/manPrikaz_jabukaVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/manPrikaz_cokoVisnjaVrednost"
+        app:layout_constraintTop_toTopOf="@+id/manPrikaz_jabukaStanjeProdatoNaslov" />
+
+    <TextView
+        android:id="@+id/manPrikaz_rogacVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/manPrikaz_jabukaVrednost"
+        app:layout_constraintTop_toTopOf="@+id/manPrikaz_rogacStanjeProdatoNaslov" />
+
+    <TextView
+        android:id="@+id/manPrikaz_pazarNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/pazarManPrikaz"
+        app:layout_constraintStart_toEndOf="@+id/manPrikaz_stanjeProdatoNaslov"
+        app:layout_constraintTop_toTopOf="@+id/manPrikaz_makStanjeProdatoNaslov" />
+
+    <TextView
+        android:id="@+id/manPrikaz_pazarVrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/manPrikaz_pazarNaslov"
+        app:layout_constraintTop_toTopOf="@+id/manPrikaz_pazarNaslov" />
+
+    <ImageButton
+        android:id="@+id/myImageButtonMak"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/black"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerInside"
+        android:src="@drawable/mak_pozadina"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/myImageButtonOrasi"
+        app:layout_constraintTop_toTopOf="@+id/myImageButtonOrasi"
+        app:layout_constraintWidth_percent="0.25"
+        tools:ignore="ContentDescription,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/myImageButtonOrasi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/brown"
+        android:scaleType="centerInside"
+        android:src="@drawable/orasi_pozadina"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manPrikaz_rogacStanjeProdatoNaslov"
+        app:layout_constraintWidth_percent="0.25"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/myImageButtonVisnja"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:backgroundTint="@color/red"
+        android:scaleType="centerInside"
+        android:src="@drawable/visnja_pozadina"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/myImageButtonOrasi"
+        app:layout_constraintTop_toTopOf="@+id/myImageButtonOrasi"
+        app:layout_constraintWidth_percent="0.25"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/myImageButtonCokoVisnja"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/chococherrycolor"
+        android:scaleType="centerInside"
+        android:src="@drawable/cokovisnja_pozadina"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/myImageButtonJabuka"
+        app:layout_constraintTop_toTopOf="@+id/myImageButtonJabuka"
+        app:layout_constraintWidth_percent="0.25"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/myImageButtonJabuka"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/applecolor"
+        android:scaleType="centerInside"
+        android:src="@drawable/jabuka_pozadina"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myImageButtonOrasi"
+        app:layout_constraintWidth_percent="0.25"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/myImageButtonRogac"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:backgroundTint="@color/rogaccolor"
+        android:scaleType="centerInside"
+        android:src="@drawable/rogac_pozadina"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/myImageButtonJabuka"
+        app:layout_constraintTop_toTopOf="@+id/myImageButtonJabuka"
+        app:layout_constraintWidth_percent="0.25"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,VisualLintBounds" />
+
+    <Button
+        android:id="@+id/manPrikaz_buttonZavrsiMan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/zavr_iManPrikaz"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/manPrikaz_zaguzvaloSe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/skyblue"
+        android:text="@string/zagu_valo_seManPrikaz"
+        android:textColor="@color/textBoja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PodesavanjaFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".PodesavanjaFragment">
+
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaKvasacVrednost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/vrednost"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaKvasacNaslov"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaKvasacNaslov" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaKvasacNaslov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/cenaKvasacNaslov"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fr_podesavanja_cenaBrasnoNaslov" />
+
+            <Button
+                android:id="@+id/fr_podesavanja_okNovaCenaKvasac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/kajsija"
+                android:text="@string/postaviCenaTekst"
+                android:textColor="@color/textBoja"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_editTextNovaCenaKvasac"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_editTextNovaCenaKvasac"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <EditText
+                android:id="@+id/fr_podesavanja_editTextNovaCenaKvasac"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-10dp"
+                android:ems="10"
+                android:hint="@string/novaCena"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaKvasacVrednost"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaKvasacVrednost"
+                tools:ignore="Autofill,DuplicateSpeakableTextCheck" />
+
+            <Button
+                android:id="@+id/fr_podesavanja_okNovaCenaBrasno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/kajsija"
+                android:text="@string/postaviCenaTekst"
+                android:textColor="@color/textBoja"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_editTextNovaCenaBrasno"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_editTextNovaCenaBrasno"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <EditText
+                android:id="@+id/fr_podesavanja_editTextNovaCenaBrasno"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-10dp"
+                android:ems="10"
+                android:hint="@string/novaCena"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaBrasnoVrednost"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaBrasnoVrednost"
+                tools:ignore="Autofill,DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaBrasnoVrednost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/vrednost"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaBrasnoNaslov"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaBrasnoNaslov" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaBrasnoNaslov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/cenaBrasnoNaslov"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fr_podesavanja_cenaPolaNaslov" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaPolaVrednost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/vrednost"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaPolaNaslov"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaPolaNaslov" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaPolaNaslov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/cenaPola"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fr_podesavanja_cenaNaslov" />
+
+            <EditText
+                android:id="@+id/fr_podesavanja_editTextNovaCenaPola"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-10dp"
+                android:ems="10"
+                android:hint="@string/novaCena"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaPolaVrednost"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaPolaVrednost"
+                tools:ignore="Autofill,DuplicateSpeakableTextCheck" />
+
+            <Button
+                android:id="@+id/fr_podesavanja_okNovaCenaPola"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/kajsija"
+                android:text="@string/postaviCenaTekst"
+                android:textColor="@color/textBoja"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_editTextNovaCenaPola"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_editTextNovaCenaPola"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_naslov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:text="@string/podesavanjaNaslov"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaNaslov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/podesavanjeCenaCele"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fr_podesavanja_naslov" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaVrednost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/vrednost"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaNaslov"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaNaslov" />
+
+            <EditText
+                android:id="@+id/fr_podesavanja_editTextNovaCena"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-10dp"
+                android:ems="10"
+                android:hint="@string/novaCena"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaVrednost"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaVrednost"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/fr_podesavanja_okNovaCena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/kajsija"
+                android:text="@string/postaviCenaTekst"
+                android:textColor="@color/textBoja"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_editTextNovaCena"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_editTextNovaCena" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaSecerNaslov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/fr_pod_secer"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fr_podesavanja_cenaKvasacNaslov" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaSecerVrednost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/vrednost"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaSecerNaslov"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaSecerNaslov" />
+
+            <EditText
+                android:id="@+id/fr_podesavanja_editTextNovaCenaSecer"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-10dp"
+                android:ems="10"
+                android:hint="@string/novaCena"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaSecerVrednost"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaSecerVrednost"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/fr_podesavanja_okNovaCenaSecer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/kajsija"
+                android:text="@string/postaviCenaTekst"
+                android:textColor="@color/textBoja"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_editTextNovaCenaSecer"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_editTextNovaCenaSecer" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaNadevMakNaslov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/fr_pod_nadevMak"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fr_podesavanja_cenaSecerNaslov" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaNadevMakVrednost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/vrednost"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaNadevMakNaslov"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaNadevMakNaslov" />
+
+            <EditText
+                android:id="@+id/fr_podesavanja_editTextNovaCenaNadevMak"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-10dp"
+                android:ems="10"
+                android:hint="@string/novaCena"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaNadevMakVrednost"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaNadevMakVrednost"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/fr_podesavanja_okNovaCenaNadevMak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/kajsija"
+                android:text="@string/postaviCenaTekst"
+                android:textColor="@color/textBoja"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_editTextNovaCenaNadevMak"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_editTextNovaCenaNadevMak" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaNadevOrasiNaslov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:text="Nadev orasi:"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fr_podesavanja_cenaNadevMakNaslov" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaNadevOrasiVrednost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/vrednost"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaNadevOrasiNaslov"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaNadevOrasiNaslov" />
+
+            <EditText
+                android:id="@+id/fr_podesavanja_editTextNovaCenaNadevOrasi"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-10dp"
+                android:ems="10"
+                android:hint="@string/novaCena"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaNadevOrasiVrednost"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaNadevOrasiVrednost"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/fr_podesavanja_okNovaCenaNadevOrasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/kajsija"
+                android:text="@string/postaviCenaTekst"
+                android:textColor="@color/textBoja"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_editTextNovaCenaNadevOrasi"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_editTextNovaCenaNadevOrasi" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaNadevVisnjaNaslov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:text="Nadev višnja:"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fr_podesavanja_cenaNadevOrasiNaslov" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaNadevVisnjaVrednost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/vrednost"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaNadevVisnjaNaslov"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaNadevVisnjaNaslov" />
+
+            <EditText
+                android:id="@+id/fr_podesavanja_editTextNovaCenaNadevVisnja"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-10dp"
+                android:ems="10"
+                android:hint="@string/novaCena"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaNadevVisnjaVrednost"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaNadevVisnjaVrednost"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/fr_podesavanja_okNovaCenaNadevVisnja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/kajsija"
+                android:text="@string/postaviCenaTekst"
+                android:textColor="@color/textBoja"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_editTextNovaCenaNadevVisnja"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_editTextNovaCenaNadevVisnja" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaNadevKremNaslov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:text="Nadev krem:"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fr_podesavanja_cenaNadevVisnjaNaslov" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaNadevKremVrednost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/vrednost"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaNadevKremNaslov"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaNadevKremNaslov" />
+
+            <EditText
+                android:id="@+id/fr_podesavanja_editTextNovaCenaNadevKrem"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-10dp"
+                android:ems="10"
+                android:hint="@string/novaCena"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaNadevKremVrednost"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaNadevKremVrednost"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/fr_podesavanja_okNovaCenaNadevKrem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/kajsija"
+                android:text="@string/postaviCenaTekst"
+                android:textColor="@color/textBoja"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_editTextNovaCenaNadevKrem"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_editTextNovaCenaNadevKrem" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaNadevJabukaNaslov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:text="Nadev jabuka:"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fr_podesavanja_cenaNadevKremNaslov" />
+
+            <TextView
+                android:id="@+id/fr_podesavanja_cenaNadevJabukaVrednost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/vrednost"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaNadevJabukaNaslov"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaNadevJabukaNaslov" />
+
+            <EditText
+                android:id="@+id/fr_podesavanja_editTextNovaCenaNadevJabuka"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-10dp"
+                android:ems="10"
+                android:hint="@string/novaCena"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_cenaNadevJabukaVrednost"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaNadevJabukaVrednost"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/fr_podesavanja_okNovaCenaNadevJabuka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/kajsija"
+                android:text="@string/postaviCenaTekst"
+                android:textColor="@color/textBoja"
+                app:layout_constraintStart_toEndOf="@+id/fr_podesavanja_editTextNovaCenaNadevJabuka"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_editTextNovaCenaNadevJabuka" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/kajsija"
+                android:text="🍅Pijačari-info🍅"
+                android:textColor="@color/textBoja"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/fr_podesavanja_cenaNadevJabukaNaslov" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

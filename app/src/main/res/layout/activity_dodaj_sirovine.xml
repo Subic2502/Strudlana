@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DodajSirovineActivity">
+
+    <TextView
+        android:id="@+id/dodajSir_operacija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operacija"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dodajSir_naslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/dodajSirovine_naslov"
+        android:textColor="@color/textBoja"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dodajSir_prviItemNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dodajSir_naslov" />
+
+    <NumberPicker
+        android:id="@+id/dodajSir_numberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/dodajSir_prviItemNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/dodajSir_prviItemNaslov" />
+
+    <TextView
+        android:id="@+id/dodajSir_drugiItemNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        app:layout_constraintStart_toEndOf="@+id/dodajSir_prviItemNaslov"
+        app:layout_constraintTop_toTopOf="@+id/dodajSir_prviItemNaslov" />
+
+    <NumberPicker
+        android:id="@+id/dodajSir_numberPicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/dodajSir_drugiItemNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/dodajSir_drugiItemNaslov" />
+
+    <TextView
+        android:id="@+id/dodajSir_treciItemNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/dodajSir_prviItemNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/dodajSir_numberPicker" />
+
+    <NumberPicker
+        android:id="@+id/dodajSir_numberPicker3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/dodajSir_treciItemNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/dodajSir_treciItemNaslov" />
+
+    <TextView
+        android:id="@+id/dodajSir_cetvrtiItemNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/dodajSir_drugiItemNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/dodajSir_numberPicker2" />
+
+    <NumberPicker
+        android:id="@+id/dodajSir_numberPicker4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/dodajSir_cetvrtiItemNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/dodajSir_cetvrtiItemNaslov" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="@color/kajsijaTamna"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dodajSir_numberPicker4"
+        app:layout_constraintTop_toBottomOf="@+id/dodajSir_numberPicker4"
+        app:srcCompat="@drawable/baseline_arrow_forward_24"
+        tools:ignore="ContentDescription,MissingConstraints,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

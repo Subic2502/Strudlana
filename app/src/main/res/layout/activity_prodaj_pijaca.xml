@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProdajPijacaActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.45"
+        android:contentDescription="@string/bgpicture"
+        android:src="@drawable/strudlanalogobg" />
+
+    <TextView
+        android:id="@+id/prodajPijaca_naslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/prodajNaPijacu"
+        android:textColor="@color/textBoja"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prodajPijaca_mak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="@string/napStrudleMak"
+        android:textColor="@color/textBoja"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/prodajPijaca_orasi"
+        app:layout_constraintTop_toTopOf="@+id/prodajPijaca_orasi" />
+
+    <NumberPicker
+        android:id="@+id/noveStrudle_numberPickerMak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/noveStrudle_numberPickerOrasi"
+        app:layout_constraintTop_toTopOf="@+id/noveStrudle_numberPickerOrasi" />
+
+    <TextView
+        android:id="@+id/prodajPijaca_orasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/napStrudleorasi"
+        android:textColor="@color/textBoja"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prodajPijaca_naslov" />
+
+    <NumberPicker
+        android:id="@+id/noveStrudle_numberPickerOrasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prodajPijaca_orasi" />
+
+    <TextView
+        android:id="@+id/prodajPijaca_visnja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/napStrudlevi_nja"
+        android:textColor="@color/textBoja"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/prodajPijaca_orasi"
+        app:layout_constraintTop_toTopOf="@+id/prodajPijaca_orasi" />
+
+    <NumberPicker
+        android:id="@+id/noveStrudle_numberPickerVisnja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toEndOf="@+id/noveStrudle_numberPickerOrasi"
+        app:layout_constraintTop_toTopOf="@+id/noveStrudle_numberPickerOrasi" />
+
+    <TextView
+        android:id="@+id/prodajPijaca_cokoVisnja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="@string/napStrudleCokoVisnja"
+        android:textColor="@color/textBoja"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/prodajPijaca_jabuka"
+        app:layout_constraintTop_toTopOf="@+id/prodajPijaca_jabuka" />
+
+    <NumberPicker
+        android:id="@+id/noveStrudle_numberPickerCokoVisnja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/noveStrudle_numberPickerJabuka"
+        app:layout_constraintTop_toTopOf="@+id/noveStrudle_numberPickerJabuka" />
+
+    <TextView
+        android:id="@+id/prodajPijaca_jabuka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/napStrudlejabuka"
+        android:textColor="@color/textBoja"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/prodajPijaca_orasi"
+        app:layout_constraintStart_toStartOf="@+id/prodajPijaca_orasi"
+        app:layout_constraintTop_toBottomOf="@+id/noveStrudle_numberPickerOrasi" />
+
+    <NumberPicker
+        android:id="@+id/noveStrudle_numberPickerJabuka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/noveStrudle_numberPickerOrasi"
+        app:layout_constraintStart_toStartOf="@+id/noveStrudle_numberPickerOrasi"
+        app:layout_constraintTop_toBottomOf="@+id/prodajPijaca_jabuka" />
+
+    <TextView
+        android:id="@+id/prodajPijaca_rogac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/napStrudlerogac"
+        android:textColor="@color/textBoja"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/prodajPijaca_jabuka"
+        app:layout_constraintTop_toTopOf="@+id/prodajPijaca_jabuka"
+        tools:ignore="TextContrastCheck" />
+
+    <NumberPicker
+        android:id="@+id/noveStrudle_numberPickerRogac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toEndOf="@+id/noveStrudle_numberPickerJabuka"
+        app:layout_constraintTop_toTopOf="@+id/noveStrudle_numberPickerJabuka" />
+
+    <TextView
+        android:id="@+id/prodajPijaca_imePijacaraNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/imePijacara"
+        android:textColor="@color/textBoja"
+        app:layout_constraintStart_toStartOf="@+id/prodajPijaca_cokoVisnja"
+        app:layout_constraintTop_toBottomOf="@+id/noveStrudle_numberPickerCokoVisnja" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/prodajPijaca_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="@color/kajsijaTamna"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/prodajPijaca_imePijacara"
+        app:layout_constraintTop_toBottomOf="@+id/noveStrudle_numberPickerRogac"
+        app:srcCompat="@drawable/baseline_arrow_forward_24"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/prodajPijaca_imePijacara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/unesiImePijacara"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/prodajPijaca_imePijacaraNaslov"
+        app:layout_constraintTop_toBottomOf="@+id/prodajPijaca_imePijacaraNaslov"
+        tools:ignore="Autofill,TouchTargetSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

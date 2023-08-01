@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="kajsija">#FFDAB9</color>
+    <color name="kajsijaTamna">#E6B896</color>
+    <color name="kajsijaTamna2">#BF916D</color>
+    <color name="textBoja">#333333</color>
+    <color name="brown">#964B00</color>
+    <color name="red">#8B0000</color>
+    <color name="chococherrycolor">#804541</color>
+    <color name="applecolor">#8db600</color>
+    <color name="rogaccolor">#5C4033</color>
+    <color name="skyblue">#87CEEB</color>
+</resources>
